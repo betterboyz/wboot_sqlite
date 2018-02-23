@@ -5,15 +5,16 @@ server:
     max-threads: 1000
     min-spare-threads: 30
     uri-encoding: UTF-8
-  port: 8000
+  port: 8001
 
 spring:
   datasource:
     driver-class-name: org.sqlite.JDBC
-    url: jdbc:sqlite:/db/wboot.db;AUTO_SERVER=TRUE;DB_CLOSE_ON_EXIT=FALSE
+    url: jdbc:sqlite::resource:db/wboot_sqlite.db
     username: root
     password: root
     schema: classpath:db/schema.sql
+    data: classpath:db/data.sql
   thymeleaf:
     mode: LEGACYHTML5
     cache: false
