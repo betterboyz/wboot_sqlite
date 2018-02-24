@@ -10,7 +10,7 @@ public class WbootSqliteApplication {
 
   public static void main(String[] args) {
     SpringApplication.run(WbootSqliteApplication.class, args);
-    System.out.println("ヾ(◍°∇°◍)ﾉﾞ    wboot启动成功      ヾ(◍°∇°◍)ﾉﾞ\n" +
+    System.out.println("ヾ(≧ ▽ ≦)ゝ    wboot启动成功      ヾ(≧ ▽ ≦)ゝ\n" +
       " _    _      _ _        __          __        _     _ \n" +
       "| |  | |    | | |       \\ \\        / /       | |   | |\n" +
       "| |__| | ___| | | ___    \\ \\  /\\  / /__  _ __| | __| |\n" +
