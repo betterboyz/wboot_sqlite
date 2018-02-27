@@ -11,8 +11,8 @@ spring:
   datasource:
     driver-class-name: org.sqlite.JDBC
     url: jdbc:sqlite::resource:db/wboot_sqlite.db
-    username: root
-    password: root
+    username:
+    password:
     schema: classpath:db/schema.sql
     data: classpath:db/data.sql
   thymeleaf:
