@@ -31,11 +31,11 @@ public class TestController {
   public Object getUserByList() {
     List<User> list = new ArrayList<>();
     User user1 = new User();
-    user1.setId(1l);
+    user1.setId(1);
     User user2 = new User();
-    user2.setId(2l);
+    user2.setId(2);
     User user3 = new User();
-    user3.setId(3l);
+    user3.setId(3);
     list.add(user1);
     list.add(user2);
     list.add(user3);
