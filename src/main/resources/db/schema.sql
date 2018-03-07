@@ -9,5 +9,6 @@ create table user
    name                 varchar(50),
    age                  int,
    sex                  tinyint,
+   createTime           datetime,
    primary key (id)
 );

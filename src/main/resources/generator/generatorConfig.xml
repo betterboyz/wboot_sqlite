@@ -55,7 +55,13 @@
             <property name="enableSubPackages" value="false"/>
         </javaClientGenerator>
         <!-- 指定数据库表 -->
-        <!--<table schema="system" tableName="user" domainObjectName="User" mapperName="UserMapper"></table>-->
-        <table schema="" tableName="user"></table>
+        <!--<table schema="system" tableName="user" domainObjectName="User" mapperName="UserMapper">-->
+            <!--&lt;!&ndash;生成的字段名称与数据库中名称一致&ndash;&gt;-->
+            <!--<property name="useActualColumnNames" value="true"/>-->
+        <!--</table>-->
+        <table schema="" tableName="user">
+            <!--生成的字段名称与数据库中名称一致-->
+            <property name="useActualColumnNames" value="true"/>
+        </table>
     </context>
 </generatorConfiguration>

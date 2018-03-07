@@ -1,19 +1,21 @@
 package com.wboot.system.model;
 
 public class User {
-    private Long id;
+    private Integer id;
 
     private String name;
 
     private Integer age;
 
-    private Byte sex;
+    private Integer sex;
 
-    public Long getId() {
+    private String createtime;
+
+    public Integer getId() {
         return id;
     }
 
-    public void setId(Long id) {
+    public void setId(Integer id) {
         this.id = id;
     }
 
@@ -33,11 +35,19 @@ public class User {
         this.age = age;
     }
 
-    public Byte getSex() {
+    public Integer getSex() {
         return sex;
     }
 
-    public void setSex(Byte sex) {
+    public void setSex(Integer sex) {
         this.sex = sex;
+    }
+
+    public String getCreatetime() {
+        return createtime;
+    }
+
+    public void setCreatetime(String createtime) {
+        this.createtime = createtime == null ? null : createtime.trim();
     }
 }

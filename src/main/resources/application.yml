@@ -11,8 +11,8 @@ spring:
   datasource:
     driver-class-name: org.sqlite.JDBC
     url: jdbc:sqlite::resource:db/wboot_sqlite.db
-    username:
-    password:
+    username: root
+    password: root
     schema: classpath:db/schema.sql
     data: classpath:db/data.sql
   thymeleaf:
@@ -24,4 +24,9 @@ spring:
 mybatis:
   mapper-locations: mybatis/**/**Mapper.xml
   type-aliases-package: com.wboot.**.model
+
+#日志输出
+logging:
+  level:
+    com.wboot: debug
 

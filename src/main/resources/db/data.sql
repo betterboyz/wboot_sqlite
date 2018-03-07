@@ -1,1 +1,1 @@
-INSERT INTO user VALUES(1, 'Tom',20,0);
+INSERT INTO user (id, name, age, sex, createTime) VALUES(1, 'Tom',20,0,null);
